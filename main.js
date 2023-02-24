@@ -1,10 +1,14 @@
 const email = document.querySelector('.navbar-email');
-const menu = document.querySelector('.desktop-menu');
+const menuPc = document.querySelector('.desktop-menu');
+const navHamburguesa = document.querySelector('.menu');
+const menuMobile = document.querySelector('.mobile-menu');
 
 email.addEventListener('click', sesion);
+navHamburguesa.addEventListener('click', sesionMobile)
 
 function sesion () {
-    menu.classList.toggle('inactive')
-
-
+    menuPc.classList.toggle('inactive')
+}
+function sesionMobile (){
+    menuMobile.classList.toggle('inactive')
 }
